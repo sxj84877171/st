@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/signin_bg"
+    android:background="@drawable/meeting_bg"
+    >
+    
+    <View 
+        android:id="@+id/signin_midline"
+        android:layout_width="match_parent"
+        android:layout_height="95px"
+        android:layout_centerInParent="true"
+        />
+    
+     
+     
+     <Button 
+         android:id="@+id/signin_btnSign"
+         android:layout_width="312px"
+         android:layout_height="96px"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/signin_selector"
+         android:text="@string/signin"
+         android:enabled="false"
+         android:textSize="36dp"
+         android:layout_below="@id/signin_midline"
+         
+         />
+     
+     <TextView 
+         android:id="@+id/signin_title"
+          android:textSize="50dp"
+          android:layout_marginTop="40dp"
+          android:textColor="@color/white"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/signin_btnSign"
+         android:text="@string/please_signin"
+         />
+
+</RelativeLayout>

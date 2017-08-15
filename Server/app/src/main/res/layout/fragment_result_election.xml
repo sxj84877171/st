@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/map"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px" >
+
+        <ImageButton
+            android:id="@+id/fragment_result_election_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+             android:visibility="invisible"
+            android:background="@drawable/back_white_selector" />
+
+        <TextView
+            android:id="@+id/fragment_result_election_bill_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="@string/vote_election"
+            android:textColor="@color/white"
+            android:textSize="48px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_result_election_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="@string/vote_result"
+        android:textColor="@color/white"
+        android:textSize="48px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280px"
+        android:layout_marginRight="280px" >
+
+        <TextView
+            android:id="@+id/fragment_result_election_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/name_index"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_result_election_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160px"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fragment_result_election_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/agree"
+            android:textColor="@color/white"
+            android:textSize="38px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_result_election_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="28px"
+        android:layout_marginLeft="280px"
+        android:layout_marginRight="280px"
+        android:layout_marginTop="28px"
+        android:divider="@color/votebakground"
+        android:dividerHeight="1px" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+
+        <TextView
+            android:id="@+id/list_result_item_num"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+             android:gravity="center"
+            android:text="1"
+            android:textSize="30px" />
+        
+        <TextView
+            android:id="@+id/list_result_item_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/list_result_item_num"
+            android:gravity="center"
+            android:text=""
+            android:textSize="30px" />
+        
+         <TextView
+            android:id="@+id/list_result_item_xianren"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/list_result_item_name"
+            android:text="xr"
+            android:textSize="25sp" />
+         
+         <TextView
+            android:id="@+id/list_result_item_niren"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@id/list_result_item_xianren"
+            android:layout_toRightOf="@id/list_result_item_name"
+            android:text="xr"
+            android:textSize="25sp" />
+         
+          <TextView
+            android:id="@+id/list_result_item_nimian"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/list_result_item_name"
+            android:layout_below="@id/list_result_item_niren"
+            android:text="xr"
+            android:textSize="25sp" />
+
+         <TextView
+            android:id="@+id/list_result_item_agree"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_result_item_nimian"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textSize="30px"
+            />
+        
+        <TextView
+            android:id="@+id/list_result_item_oppose"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_result_item_agree"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/oppose"
+            android:textSize="30px"
+            />
+
+              <TextView
+            android:id="@+id/list_result_item_abstan"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_result_item_oppose"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/abstant"
+            android:textSize="30px"
+            />
+              
+               <TextView
+            android:id="@+id/list_result_item_result"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/list_result_item_abstan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/pass"
+            android:textSize="30px"
+            />
+    </RelativeLayout>
+</RelativeLayout>

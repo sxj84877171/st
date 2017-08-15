@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66px" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white" >
+
+        <View
+            android:id="@+id/election_item_middle"
+            android:layout_width="1px"
+            android:layout_height="66px"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/list_election_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42px"
+            android:layout_toLeftOf="@id/election_item_middle"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="30px" />
+
+        <RadioGroup
+            android:id="@+id/list_election_item_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/election_item_middle"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/list_election_item_oo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12px"
+                android:button="@null"
+                 android:background="@drawable/oo_selector"
+                android:layout_marginLeft="100px"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/list_election_item_xx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" 
+                android:layout_marginTop="12px"
+                android:button="@null"
+                android:background="@drawable/xx_selector"
+                android:layout_marginLeft="80px"
+                android:layout_toRightOf="@id/list_election_item_oo" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

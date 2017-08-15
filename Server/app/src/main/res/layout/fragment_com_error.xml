@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#EAB530"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView 
+         android:id="@+id/com_error_title"
+         android:text="@string/welcome"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:textSize="60dp"
+         android:paddingTop="80dp"
+         />
+     
+     <TextView 
+         android:id="@+id/device_problem"
+         android:text="@string/base_connecting"
+         android:textSize="50dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         />
+     
+      <View 
+         android:id="@+id/com_error_btn_admin"
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         />
+
+</RelativeLayout>

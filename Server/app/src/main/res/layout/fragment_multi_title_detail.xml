@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/votebakground"
+      >
+    
+    
+    
+      
+     
+     <ImageButton 
+         android:id="@+id/mutli_title_detail_btnback"
+         android:background="@drawable/back_selector"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="36px"
+         android:layout_marginTop="48px"
+         />
+    
+      
+     <ScrollView
+		    android:id="@+id/mutli_title_detail_scview"
+		    android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="80px"
+         	android:layout_marginRight="80px"
+         	android:layout_marginTop="20px"
+		     android:layout_below="@id/mutli_title_detail_btnback"
+		    android:scrollbars="none"
+		    android:fillViewport="false">
+		    
+     <TextView 
+         android:id="@+id/mutli_title_detail_content"
+         android:text="@string/please_vote"
+         android:layout_height="wrap_content"
+          android:textSize="50px"
+          android:gravity="center"
+         android:background="@color/white"
+         android:layout_width="match_parent"
+        
+          android:textColor="@color/black"
+         android:layout_centerInParent="true"
+        
+ 
+         />
+     </ScrollView>
+     
+      <TextView 
+         android:id="@+id/mutli_title_detail_tv_tips"
+         android:layout_alignParentBottom="true"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="48px"
+         android:text="@string/please_press_key"
+         android:textSize="30px"
+         android:textColor="#878787"
+         />
+     
+     <Button 
+         android:id="@+id/mutli_title_detail_btnB"
+         android:layout_width="312px"
+         android:layout_height="96px"
+         android:layout_marginBottom="36px"
+         android:background="@drawable/oppos_selector"
+         android:text="@string/oppose"
+         android:textSize="36px"
+          android:textColor="@color/white"
+         android:textStyle = "bold"
+         android:layout_above="@id/mutli_title_detail_tv_tips"
+         android:layout_centerHorizontal="true"
+         />
+     
+     <Button 
+         android:id="@+id/mutli_title_detail_btnA"
+         android:layout_width="312px"
+         android:layout_height="96px"
+         android:layout_marginBottom="36px"
+         android:layout_marginRight = "62px"
+         android:textSize="36px"
+         android:textStyle = "bold"
+         android:textColor="@color/white"
+         android:background="@drawable/agree_selector"
+         android:text="@string/agree"
+         android:layout_above="@id/mutli_title_detail_tv_tips"
+         android:layout_toLeftOf="@id/mutli_title_detail_btnB"
+         />
+     
+     <Button 
+         android:id="@+id/mutli_title_detail_btnC"
+         android:layout_width="312px"
+         android:layout_height="96px"
+         android:layout_marginBottom="36px"
+         android:layout_marginLeft = "62px"
+         android:textColor="@color/white"
+          android:textSize="36px"
+         android:textStyle = "bold"
+         android:background="@drawable/abstain_selector"
+         android:text="@string/abstant"
+         android:layout_above="@id/mutli_title_detail_tv_tips"
+         android:layout_toRightOf="@id/mutli_title_detail_btnB"
+         />
+     
+    
+     
+     
+     <TextView 
+         android:id="@+id/mutli_title_detail_tv_result"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@id/mutli_title_detail_scview"
+         android:layout_alignRight="@id/mutli_title_detail_scview"
+         android:layout_marginRight="160px"
+         android:background="@drawable/voted_empty"
+          android:gravity="center"
+          android:text=""
+          android:textSize="50px"
+          android:textStyle="bold"
+          android:textColor="#ddff9933"
+          android:alpha="0.9"
+          android:rotation="-20"
+         android:visibility="visible"
+         />
+    
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/votebakground">
+
+    <TextView
+        android:id="@+id/firm_update_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/firm_update_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firm_update_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/firm_update_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firm_update_ver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/firm_update_ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firm_update_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/firm_update_btn_retry"
+        android:layout_width="100px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/firm_update_ver2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/agree_selector"
+        android:gravity="center"
+        android:text="重试"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="30dp"
+
+        android:layout_below="@id/firm_update_btn_retry"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:id="@+id/firm_update_scrview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:padding="5dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/firm_update_txt_log"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:minLines="4" />
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

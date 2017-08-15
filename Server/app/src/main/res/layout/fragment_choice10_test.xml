@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/votebakground"
+     >
+     
+     <ImageButton 
+         android:id="@+id/choice10_btnback"
+         android:background="@drawable/back_selector"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="36px"
+         android:layout_marginTop="48px"
+         />
+    
+     <TextView 
+        android:id="@+id/keypad_test_choice10_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48px"
+        android:textSize="40px"
+        android:text="@string/keypad_test"
+        />
+     
+     <LinearLayout 
+         android:id="@+id/keypad_test_choice10_top_layout"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:layout_below="@id/keypad_test_choice10_title"
+         android:layout_marginTop="150dp"
+         android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:orientation="horizontal"
+         >
+         
+          <Button
+            android:id="@+id/keypad_test_choice10_btn_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="A"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+          
+           <Button
+            android:id="@+id/keypad_test_choice10_btn_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="B"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+           
+            <Button
+            android:id="@+id/keypad_test_choice10_btn_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="C"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+            
+             <Button
+            android:id="@+id/keypad_test_choice10_btn_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="D"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+             
+              <Button
+            android:id="@+id/keypad_test_choice10_btn_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="E"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+              
+     </LinearLayout>
+     
+      <LinearLayout 
+           android:id="@+id/keypad_test_choice10_top2_layout"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:layout_below="@id/keypad_test_choice10_top_layout"
+         android:layout_marginTop="80dp"
+          android:layout_marginLeft="30dp"
+         android:layout_marginRight="30dp"
+         android:orientation="horizontal"
+         >
+         
+          <Button
+            android:id="@+id/keypad_test_choice10_btn_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="F"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+          
+           <Button
+            android:id="@+id/keypad_test_choice10_btn_7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="G"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+           
+            <Button
+            android:id="@+id/keypad_test_choice10_btn_8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="H"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+            
+             <Button
+            android:id="@+id/keypad_test_choice10_btn_9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="I"
+             android:gravity="center"
+             
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+             
+              <Button
+            android:id="@+id/keypad_test_choice10_btn_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/agree_selector"
+            android:text="J"
+             android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+              
+     </LinearLayout>
+     
+       <TextView 
+        android:id="@+id/keypad_test_choice10_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/keypad_test_choice10_top2_layout"
+        android:layout_marginTop="150px"
+        android:textSize="30px"
+        />
+
+</RelativeLayout>

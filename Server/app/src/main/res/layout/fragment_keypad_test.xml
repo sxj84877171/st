@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@color/votebakground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+     <ImageButton 
+         android:id="@+id/keypad_test_btnback"
+         android:background="@drawable/back_selector"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="36px"
+         android:layout_marginTop="48px"
+         android:visibility="invisible"
+         />
+    
+     
+    <TextView 
+        android:id="@+id/keypad_test_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48px"
+        android:textSize="40px"
+        android:text="@string/keypad_test"
+        />
+    
+   <TextView 
+        android:id="@+id/keypad_test_keypad_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/keypad_test_title"
+        android:layout_marginTop="68px"
+        android:textSize="58px"
+        android:text="@string/keypad_id"
+        />
+   
+   <TextView 
+        android:id="@+id/keypad_test_keypad_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/keypad_test_keypad_id"
+        android:layout_marginTop="48px"
+        android:textSize="30px"
+        android:text="SN"
+        />
+   
+   <TextView 
+        android:id="@+id/keypad_test_keypad_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/keypad_test_keypad_sn"
+        android:layout_marginTop="48px"
+        android:textSize="30px"
+        android:text="@string/version"
+        />
+   
+   
+
+</RelativeLayout>

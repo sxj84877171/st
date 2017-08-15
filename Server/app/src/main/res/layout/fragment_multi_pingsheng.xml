@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/votebakground"
+    >
+   
+	<TextView
+        android:id="@+id/multi_pingsheng_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32px"
+        android:layout_marginTop="48px"
+        android:text="@string/demo_metting"
+        android:textSize="30px" />
+
+    
+	 <TextView
+            android:id="@+id/multi_pingsheng_btn_abstain_all"
+            android:layout_width="122px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="64px"
+            android:layout_marginTop="32px"
+            android:background="@drawable/signin_selector"
+            android:gravity="center"
+            android:text="@string/all_abstant"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/multi_pingsheng_btn_oppose_all"
+            android:layout_width="122px"
+            android:layout_height="72px"
+            android:layout_marginRight="28px"
+            android:layout_marginTop="32px"
+            android:layout_toLeftOf="@id/multi_pingsheng_btn_abstain_all"
+            android:background="@drawable/oppos_selector"
+            android:gravity="center"
+            android:text="@string/all_oppose"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/multi_pingsheng_btn_agree_all"
+            android:layout_width="122px"
+            android:layout_height="72px"
+			android:layout_toLeftOf="@id/multi_pingsheng_btn_oppose_all"
+            android:layout_marginRight="28px"
+            android:layout_marginTop="32px"
+            android:background="@drawable/agree_selector"
+            android:gravity="center"
+            android:text="@string/all_agree"
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+        
+
+    <RelativeLayout
+        android:id="@+id/multi_pingsheng_pannal_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.9"
+        android:background="@drawable/gray_alpha"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/multi_pingsheng_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="36px"
+            android:text="@string/should_vote"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/multi_pingsheng_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1/1"
+            android:visibility="invisible"
+            android:textSize="30px" />
+
+        <Button
+            android:id="@+id/multi_pingsheng_pageup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/multi_pingsheng_page"
+            android:background="@drawable/page_selector"
+            android:text="@string/page_up" />
+
+        <Button
+            android:id="@+id/multi_pingsheng_pagedown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/multi_pingsheng_page"
+            android:background="@drawable/page_selector"
+            android:text="@string/page_down" />
+
+        <Button
+            android:id="@+id/multi_pingsheng_btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/signin_selector"
+            android:text="@string/confirm_submit"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold" />
+        
+        <Button
+            android:id="@+id/multi_pingsheng_btn_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/signin_selector"
+            android:text="@string/modify"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold"
+            android:visibility="invisible"
+             />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/multi_pingsheng_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/votebakground"  
+		android:dividerHeight="8px"   
+        android:layout_below="@id/multi_pingsheng_title"
+        android:layout_above="@id/multi_pingsheng_pannal_bottom"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="28px" 
+        android:layout_marginBottom="2px"
+        android:fadeScrollbars="false"  
+        android:scrollbarAlwaysDrawVerticalTrack="true"  
+        android:scrollbars="vertical" 
+        >
+    </ListView>
+    
+     <RelativeLayout 
+        android:id="@+id/multi_pingsheng_confirm_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:visibility="gone"
+        >
+        <TextView 
+             android:id="@+id/multi_pingsheng_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="36px"
+            android:layout_marginTop="110px"
+            android:layout_centerHorizontal="true"
+            
+            />
+        
+         
+        <Button 
+            android:id="@+id/multi_pingsheng_confirm_btn_cancel"
+            android:layout_width="311px"
+            android:layout_height="96px"
+            android:layout_below="@id/multi_pingsheng_confirm_text"
+            android:layout_marginLeft="296px"
+            android:layout_marginTop="102px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_signin_d"
+            android:text="@string/cancel"
+             android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold"
+            />
+        
+        <Button 
+            android:id="@+id/multi_pingsheng_confirm_btn_ok"
+            android:layout_width="311px"
+            android:layout_height="96px"
+            android:layout_below="@id/multi_pingsheng_confirm_text"
+            android:layout_marginRight="296px"
+            android:layout_marginTop="102px"
+             android:layout_alignParentRight="true"
+            android:text="@string/ok"
+            android:background="@drawable/btn_agree"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold"
+            />
+        
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

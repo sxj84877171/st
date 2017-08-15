@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="258px" >
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1px"
+        android:layout_marginBottom="1px"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/list_multicontent_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/black"
+            android:textSize="72px"
+            android:text="1" />
+
+        <TextView 
+            android:id="@+id/list_multicontent_item_btnvote"
+            android:layout_width="182px"
+            android:layout_height="72px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48px"
+            android:layout_marginTop="42px"
+            android:background="@drawable/signin_selector"
+            android:text="@string/vote"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="36px"
+            android:textStyle="bold"
+            android:visibility="visible"
+            />
+        
+         <TextView 
+            android:id="@+id/list_multicontent_item_btnmodify"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48px"
+            android:layout_marginTop="42px"
+            android:background="@drawable/modify_selector"
+            android:text="@string/modify"
+            android:gravity="center"
+            android:textColor="#08c308"
+            android:textSize="36px"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            />
+         
+         	 <TextView
+            android:id="@+id/list_multicontent_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="70px"
+            android:layout_toRightOf="@id/list_multicontent_item_num"
+            android:layout_toLeftOf="@id/list_multicontent_item_btnvote"
+             android:layout_marginTop="22px"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="94px"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="30px"
+            android:text="@string/title" />
+         	 
+         	 <TextView
+            android:id="@+id/list_multicontent_item_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="116px"
+            android:layout_toRightOf="@id/list_multicontent_item_num"
+            android:layout_toLeftOf="@id/list_multicontent_item_btnvote"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="34px"
+            android:layout_marginRight="94px"
+            android:layout_below="@id/list_multicontent_item_title"
+            android:textColor="@color/black"
+            android:textSize="24px"
+            android:text="@string/zhaiyao" />
+         	 
+          
+          <TextView 
+              android:id="@+id/list_multicontent_item_tv_result"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/agree_small"
+               android:layout_alignParentRight="true"
+                android:layout_marginRight="308px"
+                android:layout_marginTop="20px"
+                 android:background="@drawable/voted_empty"
+          		android:gravity="center"
+         	 	android:text=""
+         		 android:textSize="38px"
+          		android:textStyle="bold"
+          		android:textColor="#ddff9933"
+          		android:alpha="0.9"
+          		android:rotation="-20"
+              />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

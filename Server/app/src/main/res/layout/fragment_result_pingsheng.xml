@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/votebakground" >
+
+    <RelativeLayout
+        android:id="@+id/pingsheng_result_top_panal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px" >
+
+        <ImageButton
+            android:id="@+id/pingsheng_result_btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36px"
+            android:background="@drawable/back_selector"
+            android:visibility="invisible"
+             />
+
+        <TextView
+            android:id="@+id/pingsheng_result_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/demo_meeting_result"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pingsheng_result_title_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:layout_below="@id/pingsheng_result_top_panal"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="36dp"
+        android:background="#efe0e0" >
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_num"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/number"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_num"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_zhiwei"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_name"
+            android:gravity="left"
+            android:text="@string/memo"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_agree"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_zhiwei"
+            android:gravity="center"
+            android:text="@string/agree"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_oppose"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_agree"
+            android:gravity="center"
+            android:text="@string/oppose"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_abstan"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_oppose"
+            android:gravity="center"
+            android:text="@string/abstant"
+            android:textSize="30px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pingsheng_result_title_result"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/pingsheng_result_title_abstan"
+            android:gravity="center"
+            android:text="@string/result"
+            android:textSize="30px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/pingsheng_result_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/pingsheng_result_title_panel"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:divider="@color/material_grey_300"
+        android:dividerHeight="2dp" >
+    </ListView>
+
+</RelativeLayout>
